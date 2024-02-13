@@ -1,0 +1,91 @@
+Ensemble methods are techniques in machine learning that combine different models to imporve the performance of a predictive model. This is due to utilizing complimentary models to cover what other models lack.
+
+The basic idea
+
+Essnetially, a group of weak learners come together to form a strong learner. 
+
+Normally, an ensemble method consists of two steps: 
+
+1. Multiple machine learning models are trained independently
+
+2. The weak learners are combined. This is done through an aggregation such as voting, averaging, or weighting. 
+
+These models tend to yield better results and reduce variance and prevent overfitting.
+
+There are 3 types of ensemble methods:
+
+Bagging
+Boosting
+Stacking
+
+Bagging:
+This method involves training multiple models independently on radnom subsets of data and aggregating their predictions through voting or averaging. 
+
+Each model is trained on a random subset of the data with replacement, this random subset is called a bootstrap sample. Through this, by training on different bootstraps, bagging reduces the variance of the models. 
+
+When combining the predictions they are aggregated through an averaging method.
+
+(Models are trained in parallel on random subsets of the data)
+(Reduces Variance) 
+(Better for unstable models like Decision Trees)
+
+Advantages of Bagging 
+
+1. Reduces Overfittting
+2. Decreases Model Variance
+3. Improves Model Stability
+4. Handles High Variability
+5. Parallelizable Computation
+6. Easy to Implement
+7. Handles Noisy Data
+8. Handles Imbalanced Data **
+
+Boosting
+
+Similar to bagging, boosting trains a model on a random subset of the data, then trains a second model on the same subset of the data but using the predictions of the first model as the input. While bagging works in parallel, boosting works sequentially. ( Essentially the weak learners are sequentially corrected by their predecessors)
+
+(Reduce Bias) 
+(Better for Stable models like Linear Regression)
+
+
+1. Handles Class Imbalance
+
+2. Versatility of Weak Learners: Boosting can work with various weak learners (simple models that perform slightly better than random chance). This flexibility allows for the integration of different types of models into the ensemble, enhancing the overall performance.
+
+3. Noisy Data Tolerance
+
+4. Sequential Learning
+
+5.Fewer Hyperparameters
+
+6. Broad Applicability
+
+7. Improved Accuracy
+
+8. Reduction of Overfitting
+
+Stacking
+
+This method blends various estimator predictors into a single meta learning model. This techinique combines predictions of heterogeneous weak learners in a parallel fashion as features and outputs for a better singuler prediction.
+
+1. Increased Predictive Performance: Stacking aims to improve predictive performance by combining the strengths of diverse base models. The meta-model learns to weigh the predictions of individual models, resulting in an ensemble that can outperform any single base model.
+
+2. Model Diversity
+
+3. Handling Complex Relationships: Stacking is particularly effective at handling complex relationships in the data. By combining the outputs of multiple models, it can capture non-linearities and intricate patterns that may be challenging for individual models to learn.
+
+4. Adaptability to Heterogeneous Data: Stacking is versatile and can be applied to heterogeneous datasets, where different subsets of features may have different relationships with the target variable. Each base model can specialize in capturing patterns within specific feature subsets, enhancing the overall predictive power.
+
+5. Ensemble Customization: Stacking allows for flexibility in designing the ensemble. Practitioners can choose the combination of base models, their architectures, and the meta-model to tailor the ensemble to the specific characteristics of the problem at hand.
+
+6. Reduced Overfitting
+
+7. Handling Noisy Data
+
+8. Hyperparameter Tuning
+
+9. Feature Importance Interpretation: Stacking can potentially provide insights into the importance of different features. By analyzing the weights assigned by the meta-model to each base model's prediction, one can infer the relevance of various features in making predictions.
+
+
+
+
