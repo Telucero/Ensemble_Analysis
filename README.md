@@ -4,18 +4,17 @@ This repository contains scripts for building and evaluating machine learning mo
 
 # Baseline Script
 The baseline script performs the following steps:
-
-# Data Loading and Preprocessing:
 Load the dataset using pandas from a CSV file.
 Rename variables for clarity.
 Apply standardization to selected columns using StandardScaler from scikit-learn.
 Split the data into training, validation, and test sets.
 Apply SMOTE (Synthetic Minority Over-sampling Technique) to balance the class distribution in the training set.
-## Model Building:
+Model Building:
 Train three types of models: Simple Neural Network (SimpleNN), XGBoost, and Support Vector Machine (SVM).
 Evaluate each model on the validation set using metrics such as accuracy, precision, and recall.
 Evaluate each model on the test set to assess its generalization performance.
 Generate confusion matrices for each model on the test set to visualize classification results.
+
 ### Bagging Script
 The bagging script extends the baseline script by applying the Bagging technique to the original models. The bagging script includes the following steps:
 
