@@ -15,9 +15,6 @@ Evaluate each model on the validation set using metrics such as accuracy, precis
 Evaluate each model on the test set to assess its generalization performance.
 Generate confusion matrices for each model on the test set to visualize classification results.
 
-### Bagging Script
-The bagging script extends the baseline script by applying the Bagging technique to the original models. The bagging script includes the following steps:
-
 # Bagging:
 Use the BaggingClassifier from scikit-learn to create ensemble models for each base model (SimpleNN, XGBoost, SVM).
 Train ensemble models for each base model by creating an ensemble of five classifiers.
@@ -26,7 +23,8 @@ Compute metrics such as accuracy, precision, and recall for each Bagging ensembl
 Generate confusion matrices for each Bagging ensemble model on the test set to visually represent classification results.
 ## Impact and Results:
 Bagging did not significantly alter the performance of the original models. While it may lead to performance improvements in some cases, for this specific dataset and evaluation metrics, the original models were already performing optimally, and the addition of Bagging did not yield further enhancements.
-### Boosting Script
+
+# Boosting 
 The boosting script enhances the original models using the AdaBoost boosting technique. The boosting script includes the following steps:
 
 ## AdaBoost:
@@ -39,8 +37,7 @@ AdaBoost had a varied impact on the performance of the original models:
 For SimpleNN, AdaBoost slightly decreased the recall while maintaining accuracy and precision.
 For XGBoost, AdaBoost led to a decrease in accuracy, precision, and recall.
 For SVM, AdaBoost resulted in a decrease in accuracy, precision, and recall.
-### Stacking Script
-The stacking script implements the ensemble learning technique known as stacking. Stacking involves combining the predictions of multiple base models using a meta-learner (logistic regression in this case). The stacking script includes the following steps:
+
 
 # Stacking:
 Train diverse base models (SimpleNN, XGBoost, SVM) on the full dataset.
