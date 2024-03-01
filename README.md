@@ -52,39 +52,3 @@ Stacking maintained the recall score consistent with the original models.
 ## Conclusion
 The ensemble heart analysis scripts demonstrate the application of various ensemble learning techniques to improve the predictive power of machine learning models for heart failure prediction. Each technique had a different impact on the performance of the original models, with stacking showing the most promising results. Below are the numerical evaluation values for each model:
 
-# Baseline Models:
-
-SimpleNN:
-Accuracy: 0.6667
-Precision: 0.5000
-Recall: 0.7500
-XGBoost:
-Accuracy: 0.7500
-Precision: 1.0000
-Recall: 0.2500
-SVM:
-Accuracy: 0.7500
-Precision: 1.0000
-Recall: 0.2500
-Bagging Models:
-
-Results are similar to baseline models.
-Boosted Models (AdaBoost):
-
-Results vary for each model:
-AdaBoost SimpleNN:
-Accuracy: 0.6667
-Precision: 0.5000
-Recall: 0.2500
-AdaBoost XGBoost:
-Accuracy: 0.6667
-Precision: 0.0000
-Recall: 0.0000
-AdaBoost SVM:
-Accuracy: 0.6667
-Precision: 0.0000
-Recall: 0.0000
-Stacking Aggregated Model:
-
-Results are comparable to baseline models.
-Users can refer to these scripts for implementing ensemble learning in their own predictive modeling tasks.
