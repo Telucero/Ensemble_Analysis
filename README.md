@@ -50,5 +50,10 @@ Stacking produced comparable performance to the original models:
 Stacking achieved similar accuracy and precision as the original XGBoost and SVM models.
 Stacking maintained the recall score consistent with the original models.
 ## Conclusion
-The ensemble heart analysis scripts demonstrate the application of various ensemble learning techniques to improve the predictive power of machine learning models for heart failure prediction. Each technique had a different impact on the performance of the original models, with stacking showing the most promising results. Below are the numerical evaluation values for each model:
+Stacking aggregated model achieved similar accuracy and precision as original XGBoost and SVC models.
+All models, including stacking, correctly classified 75% of samples in the test set.
+Stacking model demonstrated consistency in recall scores with original XGBoost and SVC models, correctly identifying 25% of actual positive cases in the dataset.
+Stacking leveraged strengths of multiple base models through ensemble learning, showcasing promising results for heart failure prediction.
+Stacking with the combination of SVC and XGBoost models helped mitigate the lower test scores of the SimpleNN model, resulting in improved model robustness and overall performance. This ensemble approach showcased the effectiveness of leveraging diverse models to compensate for individual model weaknesses, leading to enhanced predictive capabilities in heart failure prediction.
+
 
